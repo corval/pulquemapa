@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Ring Digital - Tour de Puntos de Venta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="store-list-container">
+            <h2 class="main-title">CARTELERA<br>DE LA NOCHE</h2>
+            
+            <div class="actions-container">
+                <button id="find-nearby-btn">¡BUSCAR RINGS CERCANOS! 💥</button>
+                <button id="sound-toggle-btn">🔊</button>
+            </div>
+            
+            <ul id="store-list">
+                </ul>
+        </div>
+
+        <div class="map-container">
+            <div id="map"></div>
+            <div id="vfx-container"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.js"></script>
+    <script src="script.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2IVVuDPG6fw_DuDvJVt7njh81pJb0U7w&callback=initMap"></script>
+    
+</body>
+</html>
